@@ -78,7 +78,7 @@ export default function About() {
       <Section>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {stats.map((stat, i) => (
-            <Animate key={stat.label} delay={i * 0.03} onScroll>
+            <Animate key={stat.label} delay={i * 0.05}>
               <Card className="text-center">
                 <span className="text-3xl font-bold text-white">
                   <CountUp value={stat.value} duration={1500} />
@@ -94,13 +94,13 @@ export default function About() {
 
       {/* Experience */}
       <Section>
-        <Animate onScroll>
+        <Animate>
           <SectionHeader title="Experience" />
         </Animate>
         <div className="grid lg:grid-cols-2 gap-10">
           {/* Work */}
           <div>
-            <Animate onScroll>
+            <Animate delay={0.05}>
               <div className="flex items-center gap-2 mb-6">
                 <div className="p-2 border border-white">
                   <BriefcaseIcon size={18} className="text-white" />
@@ -112,7 +112,7 @@ export default function About() {
             </Animate>
             <div className="space-y-5">
               {experience.map((exp, i) => (
-                <Animate key={exp.id} delay={i * 0.03} onScroll>
+                <Animate key={exp.id} delay={0.08 + i * 0.05}>
                   <div className="pl-5 border-l border-white/20 hover:border-white/50 transition-colors">
                     <span className="text-xs text-gray-500 uppercase tracking-wider">
                       {exp.period}
@@ -130,7 +130,7 @@ export default function About() {
 
           {/* Education */}
           <div>
-            <Animate onScroll>
+            <Animate delay={0.05}>
               <div className="flex items-center gap-2 mb-6">
                 <div className="p-2 border border-white">
                   <AcademicIcon size={18} className="text-white" />
@@ -141,7 +141,7 @@ export default function About() {
               </div>
             </Animate>
             {education.map((edu, i) => (
-              <Animate key={edu.id} delay={i * 0.03} onScroll>
+              <Animate key={edu.id} delay={0.08 + i * 0.05}>
                 <Card>
                   <span className="text-xs text-gray-500 uppercase tracking-wider">
                     {edu.period}
@@ -155,7 +155,7 @@ export default function About() {
               </Animate>
             ))}
 
-            <Animate delay={0.06} onScroll>
+            <Animate delay={0.2}>
               <h4 className="text-sm font-bold text-white uppercase tracking-wider mt-8 mb-3">
                 Certifications
               </h4>

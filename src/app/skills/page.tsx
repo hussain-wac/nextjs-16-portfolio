@@ -34,14 +34,14 @@ export default function Skills() {
         <div className="space-y-10">
           {categories.map((cat, ci) => (
             <div key={cat.title}>
-              <Animate delay={ci * 0.03} onScroll>
+              <Animate delay={ci * 0.05}>
                 <h2 className="text-lg font-bold text-white uppercase tracking-wider mb-4">
                   {cat.title}
                 </h2>
               </Animate>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 {cat.data.map((skill, i) => (
-                  <Animate key={skill.name} delay={i * 0.02} onScroll>
+                  <Animate key={skill.name} delay={ci * 0.05 + i * 0.03}>
                     <SkillBar skill={skill} />
                   </Animate>
                 ))}
@@ -61,7 +61,7 @@ export default function Skills() {
         </Animate>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
           {softSkills.map((skill, i) => (
-            <Animate key={skill.name} delay={i * 0.02} onScroll>
+            <Animate key={skill.name} delay={i * 0.03} onScroll>
               <SkillBar skill={skill} showIcon={false} />
             </Animate>
           ))}

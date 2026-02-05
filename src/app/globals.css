@@ -27,6 +27,28 @@ body {
     color: #000;
 }
 
+/* Select dropdown styling */
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}
+
+select option {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+select option:checked,
+select option:hover {
+    background: linear-gradient(#fff, #fff);
+    background-color: #fff !important;
+    color: #000 !important;
+    box-shadow: 0 0 10px 100px #fff inset;
+}
+
 /* Marquee animation */
 @keyframes marquee {
     0% {

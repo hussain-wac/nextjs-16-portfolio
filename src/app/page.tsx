@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { usePersonal, useServices } from "@/hooks";
 import {
   Button,
@@ -17,6 +18,15 @@ import {
 export default function Home() {
   const personal = usePersonal();
   const services = useServices();
+  const [showScroll, setShowScroll] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScroll(window.scrollY < 100);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -47,7 +57,10 @@ export default function Home() {
 
             <Animate delay={0.09}>
               <p className="text-xl md:text-2xl text-white/90">
-                <TypeWriter text={personal.title} delay={300} speed={70} />
+                Frontend{" "}
+                <span className="font-bold">
+                  <TypeWriter text="Developer" delay={300} speed={70} />
+                </span>
               </p>
             </Animate>
 
@@ -77,10 +90,14 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Scroll */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-gray-500 text-xs uppercase tracking-wider">
+        {/* Scroll indicator */}
+        <div
+          className={`absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-gray-500 text-xs uppercase tracking-wider transition-all duration-500 ${
+            showScroll ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+          }`}
+        >
           <span>Scroll</span>
-          <ArrowDownIcon size={14} />
+          <ArrowDownIcon size={14} className="animate-bounce" />
         </div>
       </section>
 
