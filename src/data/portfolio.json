@@ -1,183 +1,184 @@
 {
   "personal": {
-    "name": "John Doe",
-    "initials": "JD",
-    "title": "Frontend Developer",
-    "email": "hello@johndoe.dev",
-    "phone": "+1 (555) 123-4567",
-    "location": "San Francisco, CA",
-    "bio": "I craft beautiful, user-centric digital experiences with modern web technologies. Passionate about clean code and stunning interfaces.",
+    "name": "Muhammad Hussain",
+    "initials": "MH",
+    "title": "React.js Developer",
+    "email": "258hussain258@gmail.com",
+    "phone": "+91 9567358435",
+    "location": "Kochi, Kerala, India",
+    "bio": "React.js developer focused on building scalable, high-performance web applications and modern user interfaces.",
     "aboutMe": [
-      "I'm a frontend developer with a passion for creating beautiful, functional, and user-centered digital experiences. With 5+ years of experience in the field, I've had the privilege of working with startups, agencies, and large corporations.",
-      "I believe that great design is not just about how things look, but how they work. My approach combines aesthetics with functionality, creating interfaces that are both visually stunning and highly performant."
+      "I am a passionate React.js developer currently working on eCommerce and dashboard-based applications. I enjoy building responsive, user-friendly, and scalable web applications using modern frontend technologies.",
+      "I have experience working with React, Next.js, state management libraries, and API integrations. I strongly focus on writing clean, maintainable code and continuously improving my frontend development skills."
     ],
     "resumeUrl": "/resume.pdf",
     "available": true
   },
   "social": {
-    "github": "https://github.com",
-    "linkedin": "https://linkedin.com",
-    "twitter": "https://twitter.com",
-    "dribbble": "https://dribbble.com"
+    "github": "https://github.com/yourusername",
+    "linkedin": "https://linkedin.com/in/yourusername",
+    "twitter": "",
+    "dribbble": ""
   },
   "stats": [
-    { "label": "Years Experience", "value": "5+" },
-    { "label": "Projects Completed", "value": "50+" },
-    { "label": "Happy Clients", "value": "30+" },
-    { "label": "Technologies", "value": "20+" }
+    { "label": "Experience", "value": "2+ Years" },
+    { "label": "Projects Completed", "value": "15+" },
+    { "label": "Commits", "value": "1000+" },
+    { "label": "Merges", "value": "50+" }
   ],
   "services": [
     {
       "id": "web-dev",
       "icon": "code",
-      "title": "Web Development",
-      "description": "Building responsive and performant web applications using modern frameworks and best practices."
+      "title": "Frontend Web Development",
+      "description": "Building scalable and responsive web applications using React.js, Next.js, and modern UI frameworks."
     },
     {
-      "id": "ui-ux",
+      "id": "dashboard",
       "icon": "desktop",
-      "title": "UI/UX Design",
-      "description": "Creating intuitive and visually appealing user interfaces with attention to detail."
+      "title": "Dashboard Development",
+      "description": "Developing interactive and data-driven dashboards with optimized performance and user experience."
     },
     {
-      "id": "interactive",
+      "id": "ui-dev",
       "icon": "sparkles",
-      "title": "Interactive Experiences",
-      "description": "Crafting engaging animations and interactions that delight users."
+      "title": "UI Implementation",
+      "description": "Transforming design mockups into pixel-perfect, responsive, and accessible user interfaces."
     }
   ],
   "experience": [
     {
       "id": "exp-1",
-      "title": "Senior Frontend Developer",
-      "company": "Tech Corp",
-      "period": "2022 - Present",
-      "description": "Leading frontend development for enterprise applications, mentoring junior developers, and implementing best practices."
+      "title": "React.js Developer",
+      "company": "Webandcrafts",
+      "period": "2024 - Present",
+      "description": "Working on eCommerce and dashboard applications using React.js and Next.js. Implemented authentication, protected routing, reusable components, and performance optimizations. Received top score during probation assessment."
     },
     {
       "id": "exp-2",
-      "title": "Frontend Developer",
-      "company": "Digital Agency",
-      "period": "2020 - 2022",
-      "description": "Developed responsive web applications for various clients using React, Next.js, and modern CSS frameworks."
-    },
-    {
-      "id": "exp-3",
-      "title": "Junior Developer",
-      "company": "Startup Inc",
-      "period": "2019 - 2020",
-      "description": "Built and maintained web interfaces, collaborated with design team, and learned agile methodologies."
+      "title": "Frontend Developer Trainee",
+      "company": "Kompetenzen Technologies",
+      "period": "2023 - 2024",
+      "description": "Completed training in modern frontend web development using React.js and full stack fundamentals."
     }
   ],
   "education": [
     {
       "id": "edu-1",
-      "degree": "Bachelor of Computer Science",
-      "school": "University of Technology",
-      "period": "2015 - 2019",
-      "description": "Focused on software engineering and web technologies. Graduated with honors."
+      "degree": "B.Tech",
+      "school": "MES Institute of Technology and Management, Kollam",
+      "period": "Completed",
+      "description": "Bachelor's degree in Engineering."
     }
   ],
-  "certifications": [
-    "AWS Certified Cloud Practitioner",
-    "Meta Frontend Developer Certificate",
-    "Google UX Design Certificate"
-  ],
+  "certifications": ["React Frontend Development Training"],
   "projects": [
     {
       "id": "proj-1",
-      "title": "E-Commerce Platform",
-      "description": "A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
-      "tags": ["Next.js", "TypeScript", "Stripe", "Tailwind"],
-      "category": "E-commerce",
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com",
+      "title": "ChatFreeGPT",
+      "description": "Custom ChatGPT-like implementation built from scratch exploring conversational AI and prompt-based interactions.",
+      "tags": ["Python", "AI", "Chatbot"],
+      "category": "Web App",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/MdHussain02/chatfreegpt",
       "featured": true
     },
     {
       "id": "proj-2",
-      "title": "Task Management App",
-      "description": "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      "tags": ["React", "Node.js", "Socket.io", "MongoDB"],
-      "category": "Web App",
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com",
+      "title": "ChatFreeGPT Mobile App",
+      "description": "Flutter-based mobile application version of ChatFreeGPT providing conversational AI experience on mobile devices.",
+      "tags": ["Flutter", "Mobile App"],
+      "category": "Mobile",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/MdHussain02/Chatfreegptapp",
       "featured": true
     },
     {
       "id": "proj-3",
-      "title": "Finance Dashboard",
-      "description": "An interactive financial dashboard with data visualization, real-time stock tracking, and portfolio management tools.",
-      "tags": ["React", "D3.js", "Redux", "REST API"],
+      "title": "MESMERA Fest Website",
+      "description": "Event website developed for MESMERA fest with event information and registration integration.",
+      "tags": ["HTML", "CSS", "Bootstrap"],
       "category": "Web App",
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/MdHussain02/Mesmera24",
       "featured": true
     },
     {
       "id": "proj-4",
-      "title": "Social Media App",
-      "description": "A modern social media application with stories, real-time messaging, and content recommendations.",
-      "tags": ["React Native", "Firebase", "Redux"],
+      "title": "Plant Doctor",
+      "description": "Plant disease detection and fertilizer recommendation system using machine learning concepts.",
+      "tags": ["Flutter", "ML Integration"],
       "category": "Mobile",
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/MdHussain02/PlantDoctor",
       "featured": false
     },
     {
       "id": "proj-5",
-      "title": "Healthcare Portal",
-      "description": "A comprehensive healthcare portal for patients and providers with appointment scheduling and telemedicine features.",
-      "tags": ["Next.js", "PostgreSQL", "WebRTC"],
+      "title": "Data Seeder Using JS",
+      "description": "Utility project for seeding structured data programmatically into databases using JavaScript.",
+      "tags": ["JavaScript", "Node.js"],
       "category": "Web App",
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/MdHussain02/Data-Seeder-Using-Js",
       "featured": false
     },
     {
       "id": "proj-6",
-      "title": "Design System",
-      "description": "A comprehensive design system with reusable components, documentation, and Figma integration.",
-      "tags": ["Storybook", "Figma", "CSS", "React"],
+      "title": "React TypeScript Chrome Extension Starter",
+      "description": "Starter template for building Chrome extensions using React and TypeScript.",
+      "tags": ["React", "TypeScript", "Chrome Extension"],
       "category": "UI/UX",
-      "liveUrl": "https://example.com",
-      "githubUrl": "https://github.com",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/MdHussain02/Typescript-React-Chrome-Extension-Starter",
+      "featured": false
+    },
+    {
+      "id": "proj-7",
+      "title": "Node.js GraphQL Starter",
+      "description": "Starter backend template using Node.js, Express, TypeScript and GraphQL for scalable API development.",
+      "tags": ["Node.js", "GraphQL", "TypeScript"],
+      "category": "Web App",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/MdHussain02/NodeJs-Express-TypeScript-GraphQL-Starter",
       "featured": false
     }
   ],
   "skills": {
     "frontend": [
-      { "name": "React", "level": 95, "icon": "react" },
-      { "name": "Next.js", "level": 90, "icon": "nextjs" },
-      { "name": "TypeScript", "level": 88, "icon": "typescript" },
-      { "name": "JavaScript", "level": 95, "icon": "javascript" },
-      { "name": "Tailwind", "level": 92, "icon": "tailwind" },
-      { "name": "Framer Motion", "level": 85, "icon": "framer" }
+      { "name": "React.js", "level": 90, "icon": "react" },
+      { "name": "Next.js", "level": 75, "icon": "nextjs" },
+      { "name": "JavaScript", "level": 88, "icon": "javascript" },
+      { "name": "TypeScript", "level": 70, "icon": "typescript" },
+      { "name": "Tailwind CSS", "level": 85, "icon": "tailwind" },
+      { "name": "Bootstrap", "level": 90, "icon": "bootstrap" }
     ],
     "backend": [
-      { "name": "Node.js", "level": 82, "icon": "nodejs" },
-      { "name": "GraphQL", "level": 78, "icon": "graphql" },
-      { "name": "MongoDB", "level": 80, "icon": "mongodb" },
-      { "name": "PostgreSQL", "level": 75, "icon": "postgresql" }
+      { "name": "Node.js", "level": 65, "icon": "nodejs" },
+      { "name": "MongoDB", "level": 70, "icon": "mongodb" }
     ],
     "tools": [
-      { "name": "Git", "level": 90, "icon": "git" },
-      { "name": "Docker", "level": 72, "icon": "docker" },
-      { "name": "Vercel", "level": 88, "icon": "vercel" },
-      { "name": "Vite", "level": 85, "icon": "vite" },
-      { "name": "Figma", "level": 85, "icon": "figma" },
-      { "name": "Redux", "level": 88, "icon": "redux" }
+      { "name": "Git", "level": 85, "icon": "git" },
+      { "name": "Vercel", "level": 80, "icon": "vercel" },
+      { "name": "Figma", "level": 75, "icon": "figma" },
+      { "name": "Redux / Recoil", "level": 80, "icon": "redux" },
+      { "name": "SWR", "level": 75, "icon": "swr" }
     ]
   },
   "softSkills": [
-    { "name": "Problem Solving", "level": 95 },
-    { "name": "Communication", "level": 90 },
+    { "name": "Problem Solving", "level": 90 },
     { "name": "Team Collaboration", "level": 92 },
+    { "name": "Communication", "level": 85 },
     { "name": "Time Management", "level": 88 },
     { "name": "Adaptability", "level": 90 },
-    { "name": "Attention to Detail", "level": 94 }
+    { "name": "Attention to Detail", "level": 92 }
   ],
-  "learningTech": ["Web3", "AI/ML", "Three.js", "Rust", "WebAssembly"],
+  "learningTech": [
+    "AI Integration",
+    "Advanced Next.js",
+    "Three.js",
+    "System Design"
+  ],
   "navLinks": [
     { "href": "/", "label": "Home" },
     { "href": "/about", "label": "About" },

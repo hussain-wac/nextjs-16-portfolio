@@ -99,9 +99,10 @@ const ContactForm = memo(function ContactForm() {
           {submitting ? (
             "Sending..."
           ) : (
-            <>
-              Send Message <ArrowRightIcon size={14} className="ml-1" />
-            </>
+            <span className="flex items-center gap-1.5">
+              Send Message
+              <ArrowRightIcon size={14} />
+            </span>
           )}
         </Button>
         {sent && (

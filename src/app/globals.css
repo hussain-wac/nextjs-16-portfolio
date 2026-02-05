@@ -107,3 +107,87 @@ select option:hover {
 .animate-orbit-outer-reverse {
     animation: orbit-cw 20s linear infinite;
 }
+
+/* Smooth animations for count-up and progress bars */
+@keyframes smoothFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes smoothPulse {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+}
+
+.animate-count-up {
+    animation: smoothFadeIn 0.6s ease-out;
+}
+
+.animate-progress-bar {
+    animation: smoothFadeIn 0.8s ease-out;
+}
+
+/* Enhanced progress bar styling */
+.progress-bar {
+    transition: width 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: width;
+}
+
+.progress-bar-smooth {
+    animation: smoothPulse 2s ease-in-out;
+}
+
+/* Tabular numbers for consistent counting */
+.tabular-nums {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+}
+
+/* Smooth hover effects for interactive elements */
+.smooth-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hardware acceleration for better performance */
+.gpu-accelerated {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+/* Optimized skill bar animations */
+.skill-progress-bar {
+    contain: layout style paint;
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+.skill-container {
+    contain: layout;
+    transform: translateZ(0);
+}
+
+/* Smooth cubic bezier for natural motion */
+.smooth-progress {
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Performance optimizations */
+.optimize-animations {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    will-change: transform, opacity;
+}

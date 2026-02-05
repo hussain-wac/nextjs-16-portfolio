@@ -10,6 +10,7 @@ import {
   ProjectCard,
   Animate,
   FilterButton,
+  CountUpStat,
 } from "@/components/ui";
 
 export default function Projects() {
@@ -79,16 +80,14 @@ export default function Projects() {
       <Section>
         <Animate onScroll>
           <div className="border border-white/20 p-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              {stats.map((stat) => (
-                <div key={stat.label}>
-                  <span className="text-3xl font-bold text-white">
-                    {stat.value}
-                  </span>
-                  <p className="text-gray-500 text-xs uppercase tracking-wider mt-1">
-                    {stat.label}
-                  </p>
-                </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {stats.map((stat, index) => (
+                <CountUpStat
+                  key={stat.label}
+                  value={stat.value}
+                  label={stat.label}
+                  delay={index * 150}
+                />
               ))}
             </div>
           </div>
@@ -103,10 +102,10 @@ export default function Projects() {
               Have a Project in Mind?
             </h2>
             <p className="text-gray-500 mb-6">
-              I'm always excited to collaborate.
+              I&apos;m always excited to collaborate.
             </p>
             <Button href="/contact" size="lg">
-              Let's Discuss
+              Let&apos;s Discuss
             </Button>
           </div>
         </Animate>

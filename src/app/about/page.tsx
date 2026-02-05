@@ -66,7 +66,10 @@ export default function About() {
               <div className="flex flex-wrap gap-3 pt-2">
                 <Button href="/contact">Let's Talk</Button>
                 <Button href={personal.resumeUrl} variant="outline">
-                  <DownloadIcon size={14} className="mr-1.5" /> Download CV
+                  <span className="flex items-center gap-1.5">
+                    <DownloadIcon size={14} />
+                    Download CV
+                  </span>
                 </Button>
               </div>
             </Animate>

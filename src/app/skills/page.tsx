@@ -4,7 +4,7 @@ import { useSkills, useSoftSkills, useLearningTech } from "@/hooks";
 import {
   Section,
   SectionHeader,
-  SkillBar,
+  AnimatedSkillBar,
   Animate,
   techIcons,
 } from "@/components/ui";
@@ -41,9 +41,11 @@ export default function Skills() {
               </Animate>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 {cat.data.map((skill, i) => (
-                  <Animate key={skill.name} delay={ci * 0.05 + i * 0.03}>
-                    <SkillBar skill={skill} />
-                  </Animate>
+                  <AnimatedSkillBar
+                    key={skill.name}
+                    skill={skill}
+                    delay={ci * 200 + i * 50}
+                  />
                 ))}
               </div>
             </div>
@@ -61,9 +63,12 @@ export default function Skills() {
         </Animate>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
           {softSkills.map((skill, i) => (
-            <Animate key={skill.name} delay={i * 0.03} onScroll>
-              <SkillBar skill={skill} showIcon={false} />
-            </Animate>
+            <AnimatedSkillBar
+              key={skill.name}
+              skill={skill}
+              showIcon={false}
+              delay={i * 80}
+            />
           ))}
         </div>
       </Section>
@@ -75,10 +80,10 @@ export default function Skills() {
             Technologies I Work With
           </h2>
         </Animate>
-        <div className="relative">
-          <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-black to-transparent z-10" />
-          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-black to-transparent z-10" />
-          <div className="flex gap-4 animate-marquee">
+        <div className="relative overflow-hidden">
+          <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-black to-transparent z-10 overflow-hidden" />
+          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-black to-transparent z-10 overflow-hidden" />
+          <div className="flex gap-4 animate-marquee ">
             {[...techIcons, ...techIcons].map((tech, i) => (
               <div
                 key={i}
