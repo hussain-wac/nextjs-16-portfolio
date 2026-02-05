@@ -9,6 +9,8 @@ export { SocialLinks } from "./SocialLinks";
 export { TypeWriter } from "./TypeWriter";
 export { CountUp } from "./CountUp";
 export { OrbitingBadges } from "./OrbitingBadges";
+export { GlowCard } from "./GlowCard";
+export { FilterButton } from "./FilterButton";
 
 // Icons
 export * from "./Icons";

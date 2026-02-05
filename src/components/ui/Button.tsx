@@ -1,6 +1,6 @@
 "use client";
 
-import { memo, ReactNode } from "react";
+import { memo, ReactNode, useRef, useState } from "react";
 import Link from "next/link";
 import { styles } from "@/lib";
 
@@ -27,6 +27,22 @@ export const Button = memo(function Button({
   type = "button",
   external = false,
 }: ButtonProps) {
+  const btnRef = useRef<HTMLDivElement>(null);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [opacity, setOpacity] = useState(0);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!btnRef.current) return;
+    const rect = btnRef.current.getBoundingClientRect();
+    setPosition({
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    });
+  };
+
+  const handleMouseEnter = () => setOpacity(1);
+  const handleMouseLeave = () => setOpacity(0);
+
   const classes = `
     ${styles.btnBase}
     ${variant === "primary" ? styles.btnPrimary : styles.btnOutline}
@@ -34,6 +50,32 @@ export const Button = memo(function Button({
     ${disabled ? "opacity-50 cursor-not-allowed" : ""}
     ${className}
   `.trim();
+
+  const glowStyle =
+    variant === "outline"
+      ? {
+          opacity,
+          background: `radial-gradient(80px circle at ${position.x}px ${position.y}px, rgba(255,255,255,0.15), transparent 50%)`,
+        }
+      : {};
+
+  const content = (
+    <div
+      ref={btnRef}
+      onMouseMove={handleMouseMove}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      className="relative overflow-hidden"
+    >
+      {variant === "outline" && (
+        <div
+          className="pointer-events-none absolute inset-0 transition-opacity duration-200"
+          style={glowStyle}
+        />
+      )}
+      <span className="relative z-10">{children}</span>
+    </div>
+  );
 
   if (href) {
     if (external) {
@@ -44,13 +86,13 @@ export const Button = memo(function Button({
           rel="noopener noreferrer"
           className={classes}
         >
-          {children}
+          {content}
         </a>
       );
     }
     return (
       <Link href={href} className={classes}>
-        {children}
+        {content}
       </Link>
     );
   }
@@ -62,7 +104,7 @@ export const Button = memo(function Button({
       disabled={disabled}
       className={classes}
     >
-      {children}
+      {content}
     </button>
   );
 });

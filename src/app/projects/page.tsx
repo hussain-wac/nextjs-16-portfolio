@@ -9,6 +9,7 @@ import {
   SectionHeader,
   ProjectCard,
   Animate,
+  FilterButton,
 } from "@/components/ui";
 
 export default function Projects() {
@@ -35,17 +36,12 @@ export default function Projects() {
         <Animate delay={0.05}>
           <div className="flex flex-wrap justify-center gap-2 mb-8">
             {categories.map((cat) => (
-              <button
+              <FilterButton
                 key={cat}
+                label={cat}
+                active={active === cat}
                 onClick={() => setActive(cat)}
-                className={`px-4 py-1.5 text-xs uppercase tracking-wider transition-colors ${
-                  active === cat
-                    ? "bg-white text-black"
-                    : "border border-white/20 text-gray-400 hover:border-white hover:text-white"
-                }`}
-              >
-                {cat}
-              </button>
+              />
             ))}
           </div>
         </Animate>
